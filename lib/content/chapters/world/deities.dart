@@ -24,15 +24,15 @@ class Deity extends IndexableMarkdownContent {
       : super(markdown: """
 ## $name
 
-${description.description.join("\n")}
+${description.description.join("\n\n")}
 
-### Symbol
+**Symbol**
 
 $symbol.
 
-### Blessing
+**Blessing**
 
-${blessing.description.join("\n")}
+${blessing.description.join("\n\n")}
 """);
 }
 
