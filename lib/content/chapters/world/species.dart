@@ -5,6 +5,8 @@ class PlayableSpecies extends IndexableMarkdownContent {
   PlayableSpecies() : super(markdown: """
 # Species
 
+There are multiple species available in Zarosh, but only some of them are created with players in mind. Here are those that players are meant to use:
+
 ${SpeciesEnum.species.map((e) => SpeciesContent(e).markdown).join('\n\n')}
 """);
 }
