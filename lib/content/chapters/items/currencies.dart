@@ -38,7 +38,7 @@ class CurrencyEnum {
         "Greshian Platina is a rare coin, originated from the Greisho desert.",
         "They are small, spherical, and made out of platinum.",
         "The original denominations are unknown, but some variants have been circulated with precious stones embedded on them.",
-        "A simple Greshian Platina is valued at roughly 100 Gols, while a decorated coin may be worth between 300 and 500 Gols, based on the stone set into it.",
+        "A simple Greshian Platina is valued at roughly 100 Gol, while a decorated coin may be worth between 300 and 500 Gol, based on the stone set into it.",
         "Outside of Greisho, this coin is mostly a collection piece, but some communities in the desert, and Azure Fell, still trade primarily with it.",
       ]));
   static final Currency zalSi = Currency(
@@ -46,8 +46,6 @@ class CurrencyEnum {
       description: Paragraph([
         "Zal'Si are an interesting currency. Despite their triangular shape, the stand-offish feature it has is the core of the coin.",
         "Constructed of thin wood chips, and encircled by a leather band, Zal'Si is valued based on the age of the wood used to manufacture it.",
-        "This is the main currency carried in Zal Ale'hi, and they are worth around 10 Gols.",
+        "This is the main currency carried in Zal Ale'hi, and they are worth around 10 Gol.",
       ]));
 }
-
-//TODO: Use Currency() and make a CurrencyEnum();
