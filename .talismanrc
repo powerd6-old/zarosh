@@ -1,0 +1,4 @@
+fileignoreconfig:
+- filename: lib/content/chapters/items/armour.dart
+  checksum: 0560e6d6038cf980660978a1def220cce9b9137b43dee80619e10f50c9019b4f
+version: ""
