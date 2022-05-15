@@ -6,7 +6,25 @@ class Armour extends IndexableMarkdownContent {
   Armour() : super(markdown: """
 # Armour
 
+| Name | Description | Effects | Cost |
+| --- | --- | --- | --- |
+${ArmourEnum.armours.map(toMarkdown).join('\n')}
 """);
+
+  static toMarkdown(Item e) {
+    return [
+      e.name,
+      e.description.lines.map((e) => '<p>$e</p>').join(''),
+      e.effects != null
+          ? e.effects!.lines.map((e) => '<p>$e</p>').join('')
+          : '',
+      e.cost != null
+          ? e.cost!.entries
+              .map((e) => '<p>${e.key.name}: ${e.value}</p>')
+              .join('')
+          : ''
+    ].join(' | ');
+  }
 }
 
 class ArmourEnum {
