@@ -15,7 +15,7 @@ class CurrencyContent extends IndexableMarkdownContent {
   CurrencyContent(Currency currency) : super(markdown: """
 ## ${currency.name}
 
-${currency.description.description.join('\n\n')}
+${currency.description.lines.join('\n\n')}
 """);
 }
 

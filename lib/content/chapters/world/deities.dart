@@ -24,7 +24,7 @@ class Deity extends IndexableMarkdownContent {
       : super(markdown: """
 ## $name
 
-${description.description.join("\n\n")}
+${description.lines.join("\n\n")}
 
 **Symbol**
 
@@ -32,7 +32,7 @@ $symbol.
 
 **Blessing**
 
-${blessing.description.join("\n\n")}
+${blessing.lines.join("\n\n")}
 """);
 }
 

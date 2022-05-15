@@ -19,19 +19,19 @@ class SpeciesContent extends IndexableMarkdownContent {
 
 **Base Health**: ${species.baseHealth}
 
-${species.description.description.join("\n\n")}
+${species.description.lines.join("\n\n")}
 
 **Appearance**
 
-${species.appearance.description.join("\n\n")}
+${species.appearance.lines.join("\n\n")}
 
 **Culture**
 
-${species.culture.description.join("\n\n")}
+${species.culture.lines.join("\n\n")}
 
 **Bonuses**
 
-${species.bonuses.description.join("\n\n")}
+${species.bonuses.lines.join("\n\n")}
 """);
 }
 
