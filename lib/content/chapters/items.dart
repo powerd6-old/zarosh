@@ -3,6 +3,7 @@ import 'package:zarosh/content/chapters/items/armour.dart';
 import 'package:zarosh/content/chapters/items/clothing.dart';
 import 'package:zarosh/content/chapters/items/currencies.dart';
 import 'package:zarosh/content/chapters/items/introduction.dart';
+import 'package:zarosh/content/chapters/items/weapons.dart';
 
 class ItemsChapter {
   static final Chapter chapter =
@@ -11,7 +12,7 @@ class ItemsChapter {
     currencies,
     clothing,
     armour,
-    // weapons,
+    weapons,
     // food,
     // consumables,
     // tools,
@@ -21,4 +22,5 @@ class ItemsChapter {
   static final Currencies currencies = Currencies();
   static final Clothing clothing = Clothing();
   static final Armour armour = Armour();
+  static final Weapons weapons = Weapons();
 }
