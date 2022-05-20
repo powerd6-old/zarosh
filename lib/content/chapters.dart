@@ -9,6 +9,7 @@ class BookChapters {
     IntroductionChapter.chapter,
     WorldChapter.chapter,
     ItemsChapter.chapter,
+    // SpellsChapter.chapter,
   ]);
 
   static final ChapterList appendices =

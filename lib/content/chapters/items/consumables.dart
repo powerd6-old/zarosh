@@ -1,12 +1,12 @@
 import 'package:powerbook/models.dart';
 import 'package:powerd6/models.dart';
-import 'package:zarosh/data/items/armour.dart';
+import 'package:zarosh/data/items/consumables.dart';
 
-class Armour extends IndexableMarkdownContent {
-  Armour() : super(markdown: """
-# Armour
+class Consumables extends IndexableMarkdownContent {
+  Consumables() : super(markdown: """
+# Consumables
 
-${ArmourData.armours.map(toMarkdown).join('\n\n')}
+${ConsumablesData.consumables.map(toMarkdown).join('\n\n')}
 """);
 
   static String toMarkdown(Item e) {

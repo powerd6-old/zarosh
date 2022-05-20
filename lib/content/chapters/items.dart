@@ -1,7 +1,9 @@
 import 'package:powerbook/models.dart';
 import 'package:zarosh/content/chapters/items/armour.dart';
 import 'package:zarosh/content/chapters/items/clothing.dart';
+import 'package:zarosh/content/chapters/items/consumables.dart';
 import 'package:zarosh/content/chapters/items/currencies.dart';
+import 'package:zarosh/content/chapters/items/food.dart';
 import 'package:zarosh/content/chapters/items/introduction.dart';
 import 'package:zarosh/content/chapters/items/weapons.dart';
 
@@ -13,9 +15,8 @@ class ItemsChapter {
     clothing,
     armour,
     weapons,
-    // food,
-    // consumables,
-    // tools,
+    food,
+    consumables,
   ]);
 
   static final Introduction introduction = Introduction();
@@ -23,4 +24,6 @@ class ItemsChapter {
   static final Clothing clothing = Clothing();
   static final Armour armour = Armour();
   static final Weapons weapons = Weapons();
+  static final Food food = Food();
+  static final Consumables consumables = Consumables();
 }
