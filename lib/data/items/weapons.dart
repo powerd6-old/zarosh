@@ -534,7 +534,6 @@ class WeaponsData {
       description: Paragraph([
         "An arrow with a large surface area on the point. Usually meant to kill small creatures with the impact force, rather than piercing."
       ]),
-      effects: Paragraph([]),
       cost: {CurrenciesData.gol: 1});
   static final Item broadheadArrow = Item(
       name: "Broadhead Arrow",

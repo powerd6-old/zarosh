@@ -8,7 +8,7 @@ extension ItemExtensions on Item {
 ${cost != null ? """
 **Cost:**
 
-${cost!.entries.map((e) => "${e.value} ${e.key.name}").join('\n\n')}
+${cost!.entries.map((e) => "- ${e.value} ${e.key.name}").join('\n')}
 """ : ""}
 
 ${description.lines.join('\n\n')}
@@ -16,7 +16,7 @@ ${description.lines.join('\n\n')}
 ${effects != null ? """
 **Effects:**
 
-${effects!.lines.join('\n\n')}
+${effects!.lines.map((e) => "- $e").join('\n')}
 """ : ""}
 
 """;
