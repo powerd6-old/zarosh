@@ -1,5 +1,6 @@
 import 'package:powerbook/models.dart';
 import 'package:powerd6/models.dart';
+import 'package:zarosh/data/currencies.dart';
 
 class WeaponsData {
   static final List<Item> weapons = [
@@ -28,14 +29,16 @@ class WeaponsData {
       description: Paragraph([
         "A simple single-sided blade with a sharp point.",
         "Can be used as a cooking utensil as well as a weapon.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 20});
   static final Item throwingKnife = Item(
       name: "Throwing Knife",
       description: Paragraph([
         "A short and light double-sided blade with a very sharp point.",
         "Most of the damage is inflicted by the initial perforation, but it's blade can also be poisoned to cause additional damage.",
       ]),
-      effects: Paragraph(["Can be thrown as a Free Action"]));
+      effects: Paragraph(["Can be thrown as a Free Action"]),
+      cost: {CurrenciesData.gol: 10});
   static final Item pick = Item(
       name: "Pick",
       description: Paragraph([
@@ -44,7 +47,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "When attacking, ignore the target's defensive action if it involves blocking the attack with a shield, armour or other item",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 5});
   static final Item mainGauche = Item(
       name: "Main-Gauche",
       description: Paragraph([
@@ -53,7 +57,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "If used to parry an attack, the attacker performs a ${Reference.forFocus(Focuses.coordination).toHtml()} test of difficulty 6, and drops the weapon on failure"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   static final Item katar = Item(
       name: "Katar",
       description: Paragraph([
@@ -61,7 +66,8 @@ class WeaponsData {
         "It is incredibly effective at causing damage, but very impractical for defensive scenarios.",
         "It's usage relies on the user throwing their own weight behind each movement. It is also known as a push dagger.",
       ]),
-      effects: Paragraph(["Cannot be used for defensive action"]));
+      effects: Paragraph(["Cannot be used for defensive action"]),
+      cost: {CurrenciesData.gol: 50});
 
   // Swords
   static final List<Item> swords = [
@@ -78,7 +84,8 @@ class WeaponsData {
         "A basic two-sided blade, longer than a knife.",
         "Usually the first weapon to be learned by warriors, and is used with a shield.",
         "It's more compact profile makes it very effective for carrying and concealment.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 40});
   static final Item longSword = Item(
       name: "Long Sword",
       description: Paragraph([
@@ -87,7 +94,8 @@ class WeaponsData {
         "It can be used with one or two hands.",
       ]),
       effects: Paragraph(
-          ["Disadvantage when using defensively, if yielded one-handedly"]));
+          ["Disadvantage when using defensively, if yielded one-handedly"]),
+      cost: {CurrenciesData.gol: 50});
   static final Item greatSword = Item(
       name: "Great Sword",
       description: Paragraph([
@@ -98,13 +106,15 @@ class WeaponsData {
       effects: Paragraph([
         "Deal 2 Health Points of damage",
         "Disadvantage on ${Reference.forFocus(Focuses.speed).toHtml()} tests"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 70});
   static final Item saber = Item(
       name: "Saber",
       description: Paragraph([
         "A slightly curved single-sided blade with a sharp point.",
         "Mainly used for piercing, but can still be used like a traditional sword.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 75});
   static final Item rapier = Item(
       name: "Rapier",
       description: Paragraph([
@@ -112,7 +122,8 @@ class WeaponsData {
         "By unleashing repeated strikes, it is a difficult weapon to defend against.",
       ]),
       effects: Paragraph(
-          ["Advantage for consecutive attacks against the same target"]));
+          ["Advantage for consecutive attacks against the same target"]),
+      cost: {CurrenciesData.gol: 50});
   static final Item hookBlade = Item(
       name: "Hook Blade",
       description: Paragraph([
@@ -121,7 +132,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "When dealing damage, add a Light Injury if the target doesn't already have one"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 70});
 
   // Axes
   static final List<Item> axes = [
@@ -137,13 +149,15 @@ class WeaponsData {
       description: Paragraph([
         "A very heavy axe meant to be swinged sideways.",
         "It was originally meant to cut trees, but it can cause very deep wounds.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   static final Item hatchet = Item(
       name: "Hatchet",
       description: Paragraph([
         "A short-handled axe meant to be used as a side-arm or be thrown towards an opponent."
       ]),
-      effects: Paragraph(["Can be thrown as a Free Action"]));
+      effects: Paragraph(["Can be thrown as a Free Action"]),
+      cost: {CurrenciesData.gol: 15});
   static final Item doubleAxe = Item(
       name: "Double Axe",
       description: Paragraph([
@@ -151,25 +165,29 @@ class WeaponsData {
         "The two blades allow for quick recovery between slashes, even with the added weight.",
       ]),
       effects: Paragraph(
-          ["Advantage for consecutive attacks against the same target"]));
+          ["Advantage for consecutive attacks against the same target"]),
+      cost: {CurrenciesData.gol: 60});
   static final Item swordAxe = Item(
       name: "Sword Axe",
       description: Paragraph([
         "An axe with a very long blade that almost covers the handle.",
         "The added length of the blade forces the cuts to be shallower, but longer.",
         "Unsuited to cutting trees.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 80});
   static final Item pickaxe = Item(
       name: "Pickaxe",
       description: Paragraph([
         "Originally meant for mining and hiking, the pickaxe's sharp points can still be used as effective weapons."
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   static final Item scythe = Item(
       name: "Scythe",
       description: Paragraph([
         "A long and flat blade at the tip of a very long handle.",
         "It requires two hands to be used effectively.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   // Hammers
   static final List<Item> hammers = [
     hammer,
@@ -185,12 +203,14 @@ class WeaponsData {
       description: Paragraph([
         "A heavy block of metal where an axe's blade would usually be.",
         "It can be used as a building tool.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 15});
   static final Item warhammer = Item(
       name: "Warhammer",
       description: Paragraph([
         "With a longer handle, and a spike on one of the sides, the warhammer is a deadly weapon, but useless as a tool.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 80});
   static final Item dentedHammer = Item(
       name: "Dented Hammer",
       description: Paragraph([
@@ -199,17 +219,20 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "Deal 2 Health Points of damage",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 70});
   static final Item club = Item(
       name: "Club",
       description: Paragraph([
         "A heavy piece of wood.",
         "Can also be used as a hammer, but it might break.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 20});
   static final Item mace = Item(
       name: "Mace",
       description: Paragraph(
-          ["A solid wooden club with added metal spikes and plates."]));
+          ["A solid wooden club with added metal spikes and plates."]),
+      cost: {CurrenciesData.gol: 30});
   static final Item stick = Item(
       name: "Stick",
       description: Paragraph([
@@ -218,14 +241,16 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "Advantage on ${Reference.forFocus(Focuses.flexibility).toHtml()} tests"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 10});
   static final Item morningstar = Item(
       name: "Morningstar",
       description:
           Paragraph(["A heavy spiked metal ball at the end of a handle."]),
       effects: Paragraph([
         "Deal 3 Health Points of damage",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 70});
   // Spears
   static final List<Item> spears = [
     spear,
@@ -239,7 +264,8 @@ class WeaponsData {
       description: Paragraph([
         "A pointy blade at the end of a stick, while not very sophisticated, still a mortal weapon.",
         "It can be used with a shield, mounted and even thrown.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 50});
   static final Item trident = Item(
       name: "Trident",
       description: Paragraph([
@@ -248,7 +274,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "If used to parry an attack, the attacker performs a ${Reference.forFocus(Focuses.coordination).toHtml()} test of difficulty 6, and drops the weapon on failure"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 90});
   static final Item doubleSpear = Item(
       name: "DoubleSpear",
       description: Paragraph([
@@ -256,7 +283,8 @@ class WeaponsData {
         "Meant for close-quarter combats against multiple enemies.",
       ]),
       effects: Paragraph(
-          ["Advantage for consecutive attacks against different targets"]));
+          ["Advantage for consecutive attacks against different targets"]),
+      cost: {CurrenciesData.gol: 60});
   static final Item glefe = Item(
       name: "Glefe",
       description: Paragraph([
@@ -267,7 +295,8 @@ class WeaponsData {
       effects: Paragraph([
         "Deal 2 Health Points of damage",
         "If used to attack indoors, perform a ${Reference.forAttribute(Attributes.dexterity).toHtml()} test of difficulty 4, and drop the weapon on failure"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 70});
   static final Item halberd = Item(
       name: "Halberd",
       description: Paragraph([
@@ -276,7 +305,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "Deal 2 Health Points of damage",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 75});
   // Flails
   static final List<Item> flails = [
     flail,
@@ -288,7 +318,8 @@ class WeaponsData {
       description: Paragraph([
         "A short handle with a heavy metal ball chained to it's end.",
         "It is an agile weapon capable of shattering armour and shields.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   static final Item doubleFlail = Item(
       name: "Double Flail",
       description: Paragraph([
@@ -297,7 +328,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "Deal 2 Health Points of damage",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 50});
   static final Item threePlaceRod = Item(
       name: "Three-place-rod",
       description: Paragraph([
@@ -306,7 +338,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "Target has a disadvantage when taking defensive action against your attacks",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   // Whips
   static final List<Item> whips = [
     whip,
@@ -319,7 +352,8 @@ class WeaponsData {
         "A long twisted leather string with a handle.",
         "It is an extremely fast weapon that leverages the string's flexibility to reach impressive speeds.",
         "It can also be used as a rope.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 25});
   static final Item nineTails = Item(
       name: "Nine-tails",
       description: Paragraph([
@@ -328,7 +362,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "Deal 2 Health Points of damage",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 50});
   static final Item snakeSword = Item(
       name: "Snake Sword",
       description: Paragraph([
@@ -340,7 +375,8 @@ class WeaponsData {
       effects: Paragraph([
         "Deal 3 Health Points of damage",
         "When attacking, perform a ${Reference.forAttribute(Attributes.dexterity).toHtml()} test of difficulty 3, and take 1 point of damage on failure"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 90});
   // Exotics
   static final List<Item> exotics = [
     boomerang,
@@ -357,7 +393,8 @@ class WeaponsData {
       effects: Paragraph([
         "Can be thrown as a Free Action",
         "When thrown, perform a ${Reference.forFocus(Focuses.reflexes).toHtml()} test of difficulty 3, and fail to catch it on failure"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   static final Item knuckles = Item(
       name: "Knuckles",
       description: Paragraph([
@@ -366,7 +403,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "Advantage when trying to conceal the weapon",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 10});
   static final Item tonfa = Item(
       name: "Tonfa",
       description: Paragraph([
@@ -377,7 +415,8 @@ class WeaponsData {
       effects: Paragraph([
         "Can switch holding positions as a Free Action",
         "When held by the longer part, receive an advantage when taking defensive action"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   static final Item bola = Item(
       name: "Bola",
       description: Paragraph([
@@ -386,7 +425,8 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "When attacking, target performs a ${Reference.forAttribute(Attributes.dexterity).toHtml()} or ${Reference.forAttribute(Attributes.strength).toHtml()} test of difficulty 6, and become tangled for 1 turn on failure"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 15});
   // Bows
   static final List<Item> bows = [
     bow,
@@ -406,7 +446,8 @@ class WeaponsData {
         "Requires arrows to be used",
         "Must be reloaded between shots.",
         "Reloading this weapon is a Free Action",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 40});
   static final Item longbow = Item(
       name: "Longbow",
       description: Paragraph([
@@ -416,7 +457,8 @@ class WeaponsData {
         "Requires arrows to be used",
         "Must be reloaded between shots.",
         "Reloading this weapon is a Free Action",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 60});
   static final Item recurveBow = Item(
       name: "Recurve Bow",
       description: Paragraph([
@@ -427,7 +469,8 @@ class WeaponsData {
         "Requires arrows to be used",
         "Must be reloaded between shots.",
         "Reloading this weapon is a Free Action",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 70});
   static final Item crossbow = Item(
       name: "Crossbow",
       description: Paragraph([
@@ -440,7 +483,8 @@ class WeaponsData {
         "Reloading this weapon is a Free Action",
         "Attacking with this weapon is a Half Action",
         "Can be carried while loaded",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 70});
   static final Item repetitionCrossbow = Item(
       name: "Repetition Crossbow",
       description: Paragraph([
@@ -453,7 +497,8 @@ class WeaponsData {
         "Reloading this weapon is a Free Action",
         "Attacking with this weapon is a Half Action",
         "Can be carried while loaded",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 120});
   static final Item balestra = Item(
       name: "Balestra",
       description: Paragraph([
@@ -466,7 +511,8 @@ class WeaponsData {
         "Reloading this weapon is a Free Action",
         "Can fire any object that fits within the pouch",
         "When attacking, if loaded with arrows, attack with a disadvantage"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 75});
   // Arrows
   static final List<Item> arrows = [
     piercingArrow,
@@ -481,20 +527,23 @@ class WeaponsData {
       description: Paragraph([
         "A simple arrow with a small point. The low profile allows it to achieve higher speeds, at the cost of causing less damage.",
         "It tends to stay in the target when it hits.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 1});
   static final Item bluntArrow = Item(
       name: "Blunt Arrow",
       description: Paragraph([
         "An arrow with a large surface area on the point. Usually meant to kill small creatures with the impact force, rather than piercing."
       ]),
-      effects: Paragraph([]));
+      effects: Paragraph([]),
+      cost: {CurrenciesData.gol: 1});
   static final Item broadheadArrow = Item(
       name: "Broadhead Arrow",
       description: Paragraph([
         "An arrow with a flat and sharp point, like a blade. ",
         "It's profile allows it to still damage the target if hits at an off-angle.",
       ]),
-      effects: Paragraph(["Deal 2 Health Points of damage"]));
+      effects: Paragraph(["Deal 2 Health Points of damage"]),
+      cost: {CurrenciesData.gol: 2});
   static final Item bowfishingArrow = Item(
       name: "Bowfishing Arrow",
       description: Paragraph([
@@ -503,18 +552,21 @@ class WeaponsData {
       ]),
       effects: Paragraph([
         "When removed, perform a ${Reference.forFocus(Focuses.precision).toHtml()} test of difficulty 5, and take 1 point of damage on failure"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 3});
   static final Item piercingBolt = Item(
       name: "Piercing Bolt",
       description: Paragraph([
         "A simple bolt with a small point. The low profile allows it to achieve higher speeds, at the cost of causing less damage.",
         "It tends to stay in the target when it hits.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 1});
   static final Item broadheadBolt = Item(
       name: "Broadhead Bolt",
       description: Paragraph([
         "An arrow with a flat and sharp point, like a blade. ",
         "It's profile allows it to still damage the target if hits at an off-angle.",
       ]),
-      effects: Paragraph(["Deal 2 Health Points of damage"]));
+      effects: Paragraph(["Deal 2 Health Points of damage"]),
+      cost: {CurrenciesData.gol: 3});
 }

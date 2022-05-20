@@ -1,5 +1,6 @@
 import 'package:powerbook/models.dart';
 import 'package:powerd6/models.dart';
+import 'package:zarosh/data/currencies.dart';
 
 class ConsumablesData {
   static final List<Item> consumables = [
@@ -23,7 +24,8 @@ class ConsumablesData {
       ]),
       effects: Paragraph([
         "When ingested or poured over an open wound, heal for 2 Health Point. This cannot be used to remove injuries."
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 3});
   static final Item weakHealingPotion = Item(
       name: "Weak Healing Potion",
       description: Paragraph([
@@ -32,7 +34,8 @@ class ConsumablesData {
       ]),
       effects: Paragraph([
         "When ingested or poured over an open wound, heal for 4 Health Points. This cannot be used to remove injuries."
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 5});
   static final Item healingPotion = Item(
       name: "Healing Potion",
       description: Paragraph([
@@ -40,7 +43,8 @@ class ConsumablesData {
       ]),
       effects: Paragraph([
         "When ingested or poured over an open wound, heal for `2+1d6` Health Points. This cannot be used to remove injuries."
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 30});
   static final Item potentHealingPotion = Item(
       name: "Potent Healing  Potion",
       description: Paragraph([
@@ -49,7 +53,8 @@ class ConsumablesData {
       effects: Paragraph([
         "When ingested or poured over an open wound, heal for `3+1d6` Health Points.",
         "Remove up to one Light Injury",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 60});
 
   static final Item sleepingPotion = Item(
       name: "Sleeping Potion",
@@ -58,7 +63,8 @@ class ConsumablesData {
       ]),
       effects: Paragraph([
         "When ingested, the drinker performs a ${Reference.forFocus(Focuses.endurance).toHtml()} test of difficulty 6, and fall asleep for 5 minutes on failure.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 15});
 
   static final List<Item> venoms = [
     weakVenom,
@@ -74,7 +80,8 @@ class ConsumablesData {
       effects: Paragraph([
         "When ingested or poured on an open wound, deal 1 Health Points of damage.",
         "Can be used to poison a weapon"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 4});
   static final Item venom = Item(
       name: "Venom",
       description: Paragraph([
@@ -83,7 +90,8 @@ class ConsumablesData {
       effects: Paragraph([
         "When ingested or poured on an open wound, deal 2 Health Points of damage.",
         "Can be used to poison a weapon"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 8});
   static final Item assassinsVenom = Item(
       name: "Assassins Venom",
       description: Paragraph([
@@ -93,7 +101,8 @@ class ConsumablesData {
       effects: Paragraph([
         "When ingested or poured on an open wound, deal `1d6` Health Points of damage.",
         "Can be used to poison a weapon"
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 20});
 
   static final Item confusionPotion = Item(
       name: "Confusion Potion",
@@ -102,5 +111,6 @@ class ConsumablesData {
       ]),
       effects: Paragraph([
         "When in contact with the eyes or tongue, performs a ${Reference.forFocus(Focuses.endurance).toHtml()} test of difficulty 7, and become unable to act for 2 turns on failure.",
-      ]));
+      ]),
+      cost: {CurrenciesData.gol: 12});
 }
