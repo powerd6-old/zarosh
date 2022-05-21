@@ -1,6 +1,7 @@
 import 'package:powerbook/models.dart';
 import 'package:powerd6/models.dart';
 import 'package:zarosh/content/chapters/world/deities.dart';
+import 'package:zarosh/data.dart';
 
 class DeitiesData {
   static final List<Deity> deities = [
@@ -98,7 +99,7 @@ class DeitiesData {
       Paragraph([
         "At most once a day, when offering a cup of alcohol, roll <code>1d6</code>.",
         "If the result of the roll is critical, then receive an artifact from Impha.",
-        "Otherwise, receive 1 gold coin if the roll is even, or 1 food item if the roll is odd.",
+        "Otherwise, receive 1 ${CurrenciesData.greshianPlatina.name} if the roll is even, or 1 food item if the roll is odd.",
       ]));
   static final Deity thol = Deity(
       "Thol, the chaos",

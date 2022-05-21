@@ -1,3 +1,4 @@
+import 'package:powerbook/models.dart';
 import 'package:powerd6/models.dart';
 
 class WisdomData {
@@ -12,43 +13,57 @@ class WisdomData {
         name: "Repair",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+        ]),
         learningCost: 3),
     Spell(
         name: "Control Element",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+        ]),
         learningCost: 4),
     Spell(
         name: "Bind Element",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 2",
+        ]),
         learningCost: 6),
     Spell(
         name: "Create Item",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+        ]),
         learningCost: 8),
     Spell(
         name: "Reflect Spell",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+        ]),
         learningCost: 9),
     Spell(
         name: "Combine Spell",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+        ]),
         learningCost: 10),
     Spell(
         name: "Create Relic",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+        ]),
         learningCost: 12),
   ];
   static final List<Spell> knowledge = [
@@ -56,38 +71,50 @@ class WisdomData {
         name: "Identify Weakness",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+        ]),
         learningCost: 3),
     Spell(
         name: "Identify Magic",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+        ]),
         learningCost: 4),
     Spell(
         name: "Destroy Item",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 2",
+        ]),
         learningCost: 6),
     Spell(
         name: "Study Phenomena",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+        ]),
         learningCost: 8),
     // TODO: Knowledge spell of level 3
     Spell(
         name: "Disassemble Relic",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+        ]),
         learningCost: 10),
     Spell(
         name: "Learn Spell",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+        ]),
         learningCost: 12),
   ];
   static final List<Spell> mysticism = [
@@ -95,43 +122,57 @@ class WisdomData {
         name: "Bless/Curse",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+        ]),
         learningCost: 3),
     Spell(
         name: "Summon Element",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+        ]),
         learningCost: 4),
     Spell(
         name: "Counter-spell",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 2",
+        ]),
         learningCost: 6),
     Spell(
         name: "Elemental Strike",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+        ]),
         learningCost: 8),
     Spell(
         name: "Heal",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+        ]),
         learningCost: 9),
     Spell(
         name: "Elemental Blast",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+        ]),
         learningCost: 10),
     Spell(
         name: "Elemental Aura",
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
-        learningRequirements: Paragraph([]),
+        learningRequirements: Paragraph([
+          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+        ]),
         learningCost: 12),
   ];
 }
