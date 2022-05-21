@@ -106,7 +106,8 @@ class PerceptionData {
         ]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 4"
+          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.awareness).toHtml()} acquired"
         ]),
         learningCost: 12),
     Spell(
@@ -119,7 +120,8 @@ class PerceptionData {
         activationRequirements: Paragraph(
             ["You must be free to move in order to look around you."]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 5"
+          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.awareness).toHtml()} acquired"
         ]),
         learningCost: 18),
   ];
@@ -198,7 +200,8 @@ class PerceptionData {
         ]),
         activationRequirements: Paragraph(["Must be facing your target."]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 4"
+          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.insight).toHtml()} acquired"
         ]),
         learningCost: 9),
     Spell(
@@ -213,7 +216,8 @@ class PerceptionData {
           "The number of friendly characters in combat must be equal or greater than the number of unfriendly characters"
         ]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 5"
+          "${Reference.forAttribute(Attributes.perception).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.insight).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
@@ -248,7 +252,7 @@ class PerceptionData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([]),
         learningCost: 8),
-// TODO: Create an instinct spell for level 4
+// TODO: Create an instinct spell for level 4 with focus requirement
     Spell(
         name: "Clairvoyance",
         effect: Paragraph([]),
