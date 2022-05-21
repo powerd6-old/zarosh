@@ -6,5 +6,9 @@ class Authors {
         name: "Hector Castelli Zacharias",
         email: "hector.zacharias@gmail.com",
         twitter: "ZektorH"),
+    Author(
+      name: "Talita Maria de Matos Leal",
+      email: "talita.m.m.leal@hotmail.com",
+    ),
   ];
 }
