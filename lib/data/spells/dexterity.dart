@@ -48,6 +48,7 @@ class DexterityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.coordination).toHtml()} acquired"
         ]),
         learningCost: 10),
     Spell(
@@ -56,6 +57,7 @@ class DexterityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.coordination).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
@@ -107,6 +109,7 @@ class DexterityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.grace).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
@@ -157,6 +160,7 @@ class DexterityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.precision).toHtml()} acquired"
         ]),
         learningCost: 10),
     Spell(
@@ -165,6 +169,7 @@ class DexterityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.precision).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];

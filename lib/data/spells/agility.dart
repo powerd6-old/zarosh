@@ -56,6 +56,7 @@ class AgilityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.agility).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.flexibility).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
@@ -107,6 +108,7 @@ class AgilityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.agility).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.reflexes).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
@@ -157,6 +159,7 @@ class AgilityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.agility).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.speed).toHtml()} acquired"
         ]),
         learningCost: 10),
     Spell(
@@ -165,6 +168,7 @@ class AgilityData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.agility).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.speed).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];

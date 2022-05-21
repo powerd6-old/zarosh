@@ -55,6 +55,7 @@ class WisdomData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.judgment).toHtml()} acquired"
         ]),
         learningCost: 10),
     Spell(
@@ -63,6 +64,7 @@ class WisdomData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.judgment).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
@@ -106,6 +108,7 @@ class WisdomData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.knowledge).toHtml()} acquired"
         ]),
         learningCost: 10),
     Spell(
@@ -114,6 +117,7 @@ class WisdomData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.knowledge).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
@@ -164,6 +168,7 @@ class WisdomData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+          "${Reference.forFocus(Focuses.mysticism).toHtml()} acquired"
         ]),
         learningCost: 10),
     Spell(
@@ -172,6 +177,7 @@ class WisdomData {
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forFocus(Focuses.mysticism).toHtml()} acquired"
         ]),
         learningCost: 12),
   ];
