@@ -1,6 +1,7 @@
 import 'package:powerbook/models.dart';
 import 'package:zarosh/content/chapters/introduction.dart';
 import 'package:zarosh/content/chapters/items.dart';
+import 'package:zarosh/content/chapters/spells.dart';
 import 'package:zarosh/content/chapters/world.dart';
 
 class BookChapters {
@@ -9,7 +10,7 @@ class BookChapters {
     IntroductionChapter.chapter,
     WorldChapter.chapter,
     ItemsChapter.chapter,
-    // SpellsChapter.chapter,
+    SpellsChapter.chapter,
   ]);
 
   static final ChapterList appendices =

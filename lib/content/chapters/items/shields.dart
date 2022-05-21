@@ -1,7 +1,7 @@
 import 'package:powerbook/models.dart';
 import 'package:powerd6/models.dart';
 import 'package:zarosh/data/items/shields.dart';
-import 'package:zarosh/extensions/items.dart';
+import 'package:zarosh/extensions/item.dart';
 
 class Shields extends IndexableMarkdownContent {
   Shields() : super(markdown: """
