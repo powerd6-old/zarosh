@@ -14,7 +14,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 3),
     Spell(
@@ -22,7 +22,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 4),
     Spell(
@@ -30,7 +30,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 2",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 2",
         ]),
         learningCost: 6),
     Spell(
@@ -38,7 +38,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
         learningCost: 7),
     // TODO: Coordination spell of level 3
@@ -47,7 +47,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 4",
           "${Reference.forFocus(Focuses.coordination).toHtml()} acquired"
         ]),
         learningCost: 10),
@@ -56,7 +56,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 5",
           "${Reference.forFocus(Focuses.coordination).toHtml()} acquired"
         ]),
         learningCost: 12),
@@ -67,7 +67,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 3),
     Spell(
@@ -75,7 +75,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 4),
     Spell(
@@ -83,7 +83,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 2",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 2",
         ]),
         learningCost: 6),
     Spell(
@@ -91,7 +91,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
         learningCost: 7),
     Spell(
@@ -99,7 +99,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
         learningCost: 9),
     // TODO: Spell for Grace level 4
@@ -108,7 +108,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 5",
           "${Reference.forFocus(Focuses.grace).toHtml()} acquired"
         ]),
         learningCost: 12),
@@ -119,7 +119,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 3),
     Spell(
@@ -127,7 +127,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 1",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 4),
     Spell(
@@ -135,7 +135,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 2",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 2",
         ]),
         learningCost: 6),
     Spell(
@@ -143,7 +143,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
         learningCost: 7),
     Spell(
@@ -151,7 +151,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 3",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
         learningCost: 9),
     Spell(
@@ -159,7 +159,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 4",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 4",
           "${Reference.forFocus(Focuses.precision).toHtml()} acquired"
         ]),
         learningCost: 10),
@@ -168,7 +168,7 @@ class DexterityData {
         effect: Paragraph([]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
-          "${Reference.forAttribute(Attributes.wisdom).toHtml()} equal or greater than 5",
+          "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 5",
           "${Reference.forFocus(Focuses.precision).toHtml()} acquired"
         ]),
         learningCost: 12),
