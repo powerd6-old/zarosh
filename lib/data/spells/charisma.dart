@@ -79,8 +79,23 @@ class CharismaData {
   static final List<Spell> persuasion = [
     Spell(
         name: "Message",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "Your voice travels further than normal.",
+          "Your target will hear your voice clearly in their mind.",
+          "With each activation, you may exchange a certain number of sentences based on your ${Reference.forAttribute(Attributes.charisma).toHtml()} score:",
+          [
+            "| Score | Number of sentences |",
+            "| --- | --- |",
+            "| 2 | 3 |",
+            "| 3 | 4 |",
+            "| 4 | 5 |",
+            "| 5 | 6 |"
+          ].join('\n')
+        ]),
+        activationRequirements: Paragraph([
+          "You must speak out loud",
+          "You must have touched your target at least once before"
+        ]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.charisma).toHtml()} equal or greater than 1",
         ]),
@@ -95,10 +110,35 @@ class CharismaData {
         learningCost: 4),
     Spell(
         name: "Speak",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "You communicate on a level deeper than words.",
+          "The available specialities are:",
+          {
+            "Plants": "You can communicate with the vegetation around you.",
+            "Animals": "You can communicate with animals.",
+            "Entities":
+                "You can communicate with non-physical entities like spirits and elementals.",
+            "Dead":
+                "You can communicate with the the dead that linger around you."
+          }.entries.map((e) => "- ${e.key}: ${e.value}").join('\n'),
+          "The target will be able to share simple details about the happenings around them, and could be persuaded to follow simple orders, if they are able to follow them.",
+          "With each activation, you may exchange a certain number of sentences based on your ${Reference.forAttribute(Attributes.charisma).toHtml()} score:",
+          [
+            "| Score | Number of sentences |",
+            "| --- | --- |",
+            "| 2 | 4 |",
+            "| 3 | 6 |",
+            "| 4 | 8 |",
+            "| 5 | 12 |"
+          ].join('\n')
+        ]),
+        activationRequirements: Paragraph([
+          "You must speak out loud",
+          "You must maintain line of sight with your target",
+        ]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.charisma).toHtml()} equal or greater than 2",
+          "When learning this spell choose a speciality. This spell must be learnt again to choose the other speciality."
         ]),
         learningCost: 6),
     Spell(
