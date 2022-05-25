@@ -11,32 +11,76 @@ class DexterityData {
   static final List<Spell> coordination = [
     Spell(
         name: "Missdirect",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "You use your body to divert the attention of others, they see what you want to show, and don't what you want to hide.",
+          "For a certain amount of turn determined by your ${Reference.forAttribute(Attributes.dexterity).toHtml()} score, any tests that try to detect your movements have their difficulty increased.",
+          [
+            "| Score | Duration | Difficulty Increase |",
+            "| --- | --- | --- |",
+            "| 1 | 1 | 1 |",
+            "| 2 | 2 | 2 |",
+            "| 3 | 2 | 3 |",
+            "| 4 | 3 | 3 |",
+            "| 5 | 3 | 4 |"
+          ].join('\n')
+        ]),
+        activationRequirements: Paragraph(["You must be able to move freely"]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 3),
     Spell(
         name: "Soft-Touch",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "Your movements are careful and light, no one notices your hands moving.",
+          "For a certain amount of turns determined by your ${Reference.forAttribute(Attributes.dexterity).toHtml()} score, you are able to touch characters without them noticing.",
+          [
+            "| Score | Duration |",
+            "| --- | --- |",
+            "| 1 | 1 |",
+            "| 2 | 2 |",
+            "| 3 | 2 |",
+            "| 4 | 3 |",
+            "| 5 | 4 |"
+          ].join('\n')
+        ]),
+        activationRequirements: Paragraph([
+          "Your hands must not be touching any other character",
+        ]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
         ]),
         learningCost: 4),
     Spell(
         name: "Push Position",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "You move carefully to get closer and land an attack.",
+          "Move towards any character within reasonable distance from you and attack them this turn.",
+          "Reactions that would be triggered from your movement have disadvantage on all rolls."
+        ]),
+        activationRequirements: Paragraph(["You must be able to move freely"]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 2",
         ]),
         learningCost: 6),
     Spell(
         name: "Spider Climb",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "You move carefully and climb even the hardest surfaces.",
+          "For a certain amount of turn determined by your ${Reference.forAttribute(Attributes.dexterity).toHtml()} score, you are able to climb any surface with relative ease.",
+          [
+            "| Score | Duration |",
+            "| --- | --- |",
+            "| 3 | 2 |",
+            "| 4 | 3 |",
+            "| 5 | 5 |"
+          ].join('\n')
+        ]),
+        activationRequirements: Paragraph([
+          "You must be able to move freely",
+          "You must be facing the target surface",
+          "The target surface must not be completely slippery or flush"
+        ]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
@@ -44,7 +88,12 @@ class DexterityData {
     // TODO: Coordination spell of level 3
     Spell(
         name: "Firm-Step",
-        effect: Paragraph([]),
+        effect: Paragraph([
+          "You solidify your stance and make yourself harder to trip.",
+          "For the next `1d6` turns, you are harder to make trip, fall or be thrown.",
+          "Characters rolling to do this to your character have a disadvantage.",
+          "You get advantage on tests to resist these conditions."
+        ]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 4",
@@ -53,8 +102,11 @@ class DexterityData {
         learningCost: 10),
     Spell(
         name: "Reposition",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "Tactfully move around the battlefield repositioning those in your way.",
+          "For the next `1d6`+1 turns, anytime you move past another character you are able to move them to any spot relatively close to their original position"
+        ]),
+        activationRequirements: Paragraph(["Must be able to move freely"]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 5",
           "${Reference.forFocus(Focuses.coordination).toHtml()} acquired"
@@ -64,7 +116,10 @@ class DexterityData {
   static final List<Spell> grace = [
     Spell(
         name: "Muffled Steps",
-        effect: Paragraph([]),
+        effect: Paragraph([
+          "Your steps are measured and careful.",
+          "For the next `1d6` turns, movements you make do not make sounds and cannot be detected by non-magical means."
+        ]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
@@ -72,7 +127,19 @@ class DexterityData {
         learningCost: 3),
     Spell(
         name: "Infliction",
-        effect: Paragraph([]),
+        effect: Paragraph([
+          "You become dangerously effective with your movements.",
+          "For a certain amount of turn determined by your ${Reference.forAttribute(Attributes.dexterity).toHtml()} score, you can choose another number on the dice to count for critical rolls.",
+          [
+            "| Score | Duration |",
+            "| --- | --- |",
+            "| 1 | 1 |",
+            "| 2 | 1 |",
+            "| 3 | 2 |",
+            "| 4 | 2 |",
+            "| 5 | 3 |"
+          ].join('\n')
+        ]),
         activationRequirements: Paragraph([]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 1",
@@ -80,24 +147,34 @@ class DexterityData {
         learningCost: 4),
     Spell(
         name: "Steady Hand",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "You are focused and command your hands skilfully.",
+          "For the next `1d6` turns, any effects that would cause you to drop or let go of items on your hand do not affect you."
+        ]),
+        activationRequirements:
+            Paragraph(["You must currently have items held in your hands"]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 2",
         ]),
         learningCost: 6),
     Spell(
         name: "Free-Step",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "Your movements are hard to read, and you leave no room for interjections.",
+          "For the next `1d6` turns, no reactions will be triggered by your actions."
+        ]),
+        activationRequirements: Paragraph(["You must be able to move freely"]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
         learningCost: 7),
     Spell(
         name: "Steady",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "No obstacles can stop you, you manoeuvre around them gracefully, like they were not even there.",
+          "For the next 2 turns, any stationary obstacles and avoidable surface effects do not affect you."
+        ]),
+        activationRequirements: Paragraph(["You must be able to move freely"]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 3",
         ]),
@@ -105,8 +182,11 @@ class DexterityData {
     // TODO: Spell for Grace level 4
     Spell(
         name: "Fluidity",
-        effect: Paragraph([]),
-        activationRequirements: Paragraph([]),
+        effect: Paragraph([
+          "Like a moving blade, your body is quick and precise.",
+          "For the next `1d6` turns, add 1 to your ${Reference.forAttribute(Attributes.dexterity).toHtml()} score"
+        ]),
+        activationRequirements: Paragraph(["You must be able to move freely"]),
         learningRequirements: Paragraph([
           "${Reference.forAttribute(Attributes.dexterity).toHtml()} equal or greater than 5",
           "${Reference.forFocus(Focuses.grace).toHtml()} acquired"
